@@ -35,7 +35,7 @@ const RightArrow = () => {
     </Flex>
   );
 }
-export default function ImageSrollbar({ data }) {
+const ImageScrollbar = ({ data }) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} style={{ overflow: 'hidden' }} >
       {data.map((item) => (
@@ -47,3 +47,4 @@ export default function ImageSrollbar({ data }) {
   );
 }
 
+export default ImageScrollbar;
